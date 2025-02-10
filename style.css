@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.384)), url(./asset/l3.avif);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 12px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    font-size: 15px;
+    margin-left: 4%;
+}
+
+.title h1 {
+    color: rgba(255, 115, 0, 0.993);
+}
+
+.title h2 {
+    color: rgba(53, 185, 13, 0.993);
+    padding-left: 50px;
+}
+
+.logo {
+    margin-right: 3%;
+    background: white;
+    padding-right: 60px;
+    padding-left: 30px;
+    border: none;
+}
+
+.logo img {
+    width: 150%;
+    height: 14vh;
+
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    min-height: 60vh;
+    margin: 7px;
+    margin-left: 5%;
+    margin-right: 10%;
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-container h2 {
+    font-size: 18px;
+    color: rgba(53, 185, 13, 0.993);
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 10px;
+    color: white;
+    position: relative;
+    padding-left: 20px;
+    list-style: none;
+}
+
+li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    background-color: rgba(255, 115, 0, 0.993);
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 10px;
+}
+
+.details {
+    width: 50%;
+    margin-right: 5%;
+}
+
+.text {
+    width: 45%;
+    margin-left: 10%;
+}
+
+.overview {
+    margin-bottom: 20px;
+    width: 118%;
+    font-size: 10px;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.534));
+    margin-top: 45%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.overview h3 {
+    font-size: 25px;
+    color: rgba(53, 185, 13, 0.993);
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.overview p {
+    font-size: 12px;
+    line-height: 1.2rem;
+}
+
+.contact {
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.534));
+    width: 55%;
+    border-radius: 10px;
+    margin-left: 30%;
+}
+
+i {
+    padding: 5px;
+    text-indent: 1rem;
+    color: rgba(255, 115, 0, 0.993);
+}
+
+span {
+    padding-left: 5px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.benefits {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.534));
+    color: white;
+    padding: 30px;
+    list-style: -webkit-image-set(checkbox='asset/checkbox.png') 0 0 0 0;
+}
+
+.benefits ul {
+    list-style: -webkit-image-set(checkbox='asset/checkbox.png') 0 0 0 0;
+    font-size: 12px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+
+}
+
+.requirements {
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.534));
+    color: white;
+    padding: 30px;
+}
+
+.apply {
+    margin-left: 20%;
+}
+
+.apply button {
+    padding: 5px;
+    background: rgba(255, 115, 0, 0.993);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    transition: transform 0.2s;
+    animation: popInOut 2s infinite ease-in-out;
+}
+
+@keyframes popInOut {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.apply button:hover {
+    background-color: #45a049;
+}
+
+.apply button a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
