@@ -27,6 +27,7 @@ body {
 
 .title h1 {
     color: rgba(255, 115, 0, 0.993);
+    padding-left: 50px;
 }
 
 .title h2 {
